@@ -1,0 +1,24 @@
+@import "../variables.scss";
+
+.restaurant {
+  overflow-y: scroll;
+  overflow-y: auto;
+  height: 100vh;
+  margin: 100px 20px 0 20px;
+  section {
+    margin-bottom: 10vh;
+  }
+  @include mq("md") {
+    margin: 70px 50px 0 50px;
+    section {
+      margin-bottom: 25vh;
+    }
+  }
+  @include mq("xl") {
+    margin: 70px 70px 0 70px; 
+  }
+}
+
+.restaurant::-webkit-scrollbar {
+  display: none;
+}

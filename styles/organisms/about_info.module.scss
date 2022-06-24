@@ -1,0 +1,192 @@
+@import "../variables.scss";
+
+.info {
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+  &__business,
+  &__sns {
+    border: solid 1px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  &__business {
+    height: auto;
+    margin: 0 auto;
+  }
+  &__sns {
+    &_position {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    text-align: center;
+    padding: 42px;
+    white-space: nowrap;
+  }
+  iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 27vh;
+  }
+  &__flex {
+    margin: 0 auto;
+  }
+  &__hours {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  &__week {
+    display: flex;
+    justify-content: center;
+  }
+  @include mq("md") {
+    h3 {
+      font-size: 24px;
+      justify-content: flex-start;
+    }
+    br {
+      display: none;
+    }
+    &__sns {
+      padding: 36px;
+      border: solid 1px;
+      width: 70vw;
+      margin: 0 auto;
+      &_position {
+        justify-content: flex-start;
+      }
+    }
+    &__position {
+      display: flex;
+    }
+    &__business {
+      border: solid 1px;
+      padding: 20px;
+      height: auto;
+      width: 70vw;
+      margin: 0 auto;
+    }
+    a {
+      margin-right: calc(3vw - 20px);
+    }
+    h2 {
+      font-size: 44px;
+      width: 70vw;
+      display: flex;
+      margin: 0 auto;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    &__adress {
+      width: 70vw;
+      margin: 0 auto;
+      border: solid 1px;
+      padding: 20px;
+      &_container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &__text {
+      display: flex;
+      font-size: clamp(12px, 1.5vw, 24px);
+      align-items: center;
+      padding: 0;
+    }
+    &__hours {
+      display: flex;
+      justify-content: space-between;
+      width: 42vw;
+    }
+    &__week {
+      font-size: clamp(12px, 1.5vw, 24px);
+      margin-right: 7vw;
+    }
+    &__flex {
+      display: flex;
+    }
+    p {
+      font-size: clamp(12px, 1.5vw, 24px);
+    }
+    iframe {
+      width: 30vw;
+      height: 9.5vh;
+    }
+  }
+}
+
+.business {
+  border: solid 1px;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  &__shop {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3vw;
+    width: 34vw;
+  }
+  &__flex {
+    display: flex;
+  }
+  &__week {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  &__hours {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 50px;
+  }
+  span {
+    display: block;
+    border-bottom: 1px solid;
+    width: 220px;
+    margin: 20px auto;
+  }
+  @include mq("md") {
+    padding: 40px 20px;
+    width: 70vw;
+    &__flex {
+      display: flex;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    p {
+      font-size: clamp(12px, 1.5vw, 24px);
+      margin-bottom: 20px;
+    }
+    &__container {
+      display: flex;
+    }
+    &__week {
+      justify-content: flex-start;
+      width: 16vw;
+      padding: 0;
+      
+    }
+    &__shop {
+      justify-content: flex-start;
+      width: 18vw;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.access {
+  height: 100vh;
+  &__map {
+    width: 100%;
+  }
+  p {
+    font-size: 14px;
+  }
+  @include mq("md") {
+    &__container {
+      width: 74%;
+      margin: 0 auto;
+    }
+    &__map {
+      width: 75%;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}

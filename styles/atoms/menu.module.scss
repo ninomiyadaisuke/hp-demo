@@ -1,0 +1,108 @@
+@import "../variables.scss";
+
+.menu {
+  z-index: 200;
+  position: relative;
+  background: black;
+  cursor: pointer;
+  width: 40px;
+  height: 35px;
+  border-radius: 5px;
+  span {
+    display: inline-block;
+    transition: all 0.4s;
+    position: absolute;
+    left: 11px;
+    height: 2px;
+    border-radius: 2px;
+    background: #fff;
+    width: 45%;
+    &:nth-of-type(1) {
+      top: 10px;
+    }
+    &:nth-of-type(2) {
+      top: 17px;
+    }
+    &:nth-of-type(3) {
+      top: 24px;
+    }
+  }
+  &__active {
+    @extend .menu;
+    span {
+      &:nth-of-type(1) {
+        top: 11.5px;
+        left: 10.5px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 50%;
+      }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+      &:nth-of-type(3) {
+        top: 23.5px;
+        left: 10.5px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 50%;
+      }
+    }
+  }
+  @include mq("md") {
+    width: 77px;
+    height: 55px;
+    span {
+      height: 3px;
+      left: 21px;
+      &:nth-of-type(1) {
+        top: 17px;
+      }
+      &:nth-of-type(2) {
+        top: 28px;
+      }
+      &:nth-of-type(3) {
+        top: 38px;
+      }
+    }
+    &__active {
+      span {
+        &:nth-of-type(1) {
+          top: 20.5px;
+          left: 18.5px;
+        }
+        &:nth-of-type(3) {
+          top: 32.5px;
+          left: 17.5px;
+        }
+      }
+    }
+  }
+  @include mq("xl") {
+    width: 106px;
+    height: 75px;
+    span {
+      height: 5px;
+      left: 30px;
+      &:nth-of-type(1) {
+        top: 23px;
+      }
+      &:nth-of-type(2) {
+        top: 38px;
+      }
+      &:nth-of-type(3) {
+        top: 52px;
+      }
+    }
+    &__active {
+      span {
+        &:nth-of-type(1) {
+          top: 33px;
+          left: 28.5px;
+        }
+        &:nth-of-type(3) {
+          top: 46px;
+          left: 27.5px;
+        }
+      }
+    }
+  }
+}

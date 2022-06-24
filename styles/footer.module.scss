@@ -1,0 +1,65 @@
+@import "./variables.scss";
+
+.footer {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: antiquewhite;
+  z-index: -1;
+  position: absolute;
+  &__policy,
+  &__disclaimer,
+  &__icon,
+  &__logo,
+  small {
+    position: absolute;
+    font-size: 16px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  small,
+  &__policy,
+  &__disclaimer {
+    width: 100%;
+  }
+
+  &__disclaimer,
+  &__policy,
+  small {
+    top: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  &__policy {
+    top: 20%;
+  }
+  &__icon {
+    top: 50%;
+  }
+  &__logo {
+    top: 80%;
+  }
+  small {
+    font-size: 10px;
+    top: 95%;
+  }
+
+  @include mq("md") {
+    height: 600px;
+    &__policy,
+    &__disclaimer {
+      width: 25%;
+      top: 70%;
+      left: 85%;
+    }
+    &__disclaimer {
+      top: 85%;
+    }
+    &__icon {
+      top: 30%;
+    }
+  }
+  @include mq("xl") {
+    height: 700px;
+  }
+}

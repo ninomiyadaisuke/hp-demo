@@ -1,0 +1,27 @@
+@import "../variables.scss";
+
+.about {
+  &__top {
+    margin: 0;
+  }
+  &__other {
+    margin: 0 20px;
+  }
+  @include mq("md") {
+    &__grid {
+      margin: 0 auto;
+      width: 77vw;
+    }
+    &__top {
+      margin: 20px 20px 0 20px;
+    }
+    &__other {
+      margin: 0 50px;
+    }
+  }
+  @include mq("xl") {
+    &__other {
+      margin: 0 70px;
+    }
+  }
+}

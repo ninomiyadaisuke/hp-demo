@@ -1,0 +1,11 @@
+@import "../variables.scss";
+
+.gallery {
+  margin: 100px 20px 0 20px;
+  @include mq("md") {
+    margin: 70px 50px 0 50px;
+  }
+  @include mq("xl") {
+    margin: 70px 70px 0 70px;
+  }
+}

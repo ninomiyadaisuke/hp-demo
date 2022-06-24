@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.icons {
+  &__horizontal {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    @include mq("md") {
+      width: 400px;
+    }
+  }
+  &__vertical {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    @include mq("md") {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 300px;
+    }
+  }
+}

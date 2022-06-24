@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+.item {
+  display: flex;
+  justify-content: center;
+  &__container {
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__up,
+  &__down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28vh;
+  }
+  &__down {
+    height: 10vh;
+  }
+  p {
+    font-size: 14px;
+  }
+  @include mq("md") {
+    &__container {
+      width: 26vw;
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+

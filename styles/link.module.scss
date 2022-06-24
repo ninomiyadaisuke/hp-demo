@@ -1,0 +1,54 @@
+@import "./variables.scss";
+
+.links {
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid;
+  padding-bottom: 15.5px;
+  &__about {
+    color: aqua;
+  }
+  &__contact,&__drawer {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 13.5px;
+    width: 225px;
+  }
+  &__drawer {
+    font-size: 14px !important;
+    width: 230px;
+  }
+  &__policy {
+    font-size: 18px;
+    padding-bottom: 22px;
+  }
+  @include mq("md") {
+    font-size: 22px;
+    padding-bottom: 13.5px;
+    &__about {
+      font-size: clamp(10px, 1vw, 22px);
+      padding-bottom: 13.5px;
+    }
+    &__news {
+      font-size: clamp(10px, 1vw, 16px);
+      padding-bottom: 12.5px;
+    }
+    &__post {
+      font-size: clamp(10px, 1vw, 14px);
+      padding-bottom: 11px;
+    }
+    &__policy {
+      font-size: 18px;
+      padding-bottom: 22px;
+    }
+    &__contact {
+      width: 350px;
+    }
+    &__drawer {
+      width: 12vw;
+      font-size: clamp(14px, 1vw, 18px) !important;
+    }
+  }
+}

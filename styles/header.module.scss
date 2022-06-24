@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.header {
+  height: 0px;
+  h1 {
+    position: fixed;
+    z-index: 10;
+    top: 35px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  nav {
+    position: fixed;
+    z-index: 50;
+    top: 50px;
+    margin-left: 20px;
+  }
+  @include mq("md") {
+    h1 {
+      top: 0;
+      left: 0;
+      transform: translate(0%);
+    }
+    nav {
+      top: 70px;
+      margin-left: 50px;
+    }
+  }
+  @include mq('xl') {
+    margin-left: 20px;
+  }
+}

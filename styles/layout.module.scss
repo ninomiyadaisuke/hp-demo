@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+.layout {
+  margin: 20px;
+  @include mq('md') {
+    margin: 100px 50px 0px 50px;
+  }
+  @include mq('xl') {
+    margin: 100px 70px 0px 70px;
+  }
+}

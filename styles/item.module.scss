@@ -1,0 +1,12 @@
+@import "./variables.scss";
+
+.item {
+  span {
+    position: static !important;
+  }
+  img {
+    position: static !important;
+    width: 100% !important;
+    height: 20vh !important;
+  }
+}

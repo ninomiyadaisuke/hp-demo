@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.contents {
+  
+  @include mq("md") {
+    height: 100%;
+    display: flex;
+    &__map {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+      &_image {
+        width: 74%;
+      }
+    }
+    &__list {
+      width: 50%;
+      padding: 5%;
+    }
+  }
+}

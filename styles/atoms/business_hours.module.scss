@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+.business {
+  &__hours {
+    display: flex;
+    justify-content: center;
+  }
+  &__week {
+    width: 70px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  @include mq("md") {
+    &__week {
+      width: auto;
+      margin-right: 0;
+    }
+    &__hours {
+      display: flex;
+      justify-content: space-between ;
+      width: 20vw;
+      min-width: 230px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}

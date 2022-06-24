@@ -1,0 +1,42 @@
+@import "../variables.scss";
+
+.sns {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 53vw;
+  min-width: 180px;
+  height: 40px;
+  border-bottom: solid 1px;
+  &__image {
+    position: absolute;
+    top: 5px;
+  }
+
+  p {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  @include mq("md") {
+    width: 16vw;
+    min-width: 163px;
+    height: 60px;
+    &__image {
+      position: absolute;
+      top: 10px;
+    }
+    p {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @include mq('xl') {
+    width: 12.5vw;
+    min-width: 200px;
+    p {
+      font-size: 24px;
+    }
+  }
+}

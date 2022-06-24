@@ -1,0 +1,20 @@
+@import "./variables.scss";
+
+.container {
+  @include mq("md") {
+    width: 100%;
+    display: flex;
+
+    &__item,
+    &__list {
+      width: 50%;
+    }
+    &__item {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 24%;
+      height: 100%;
+      left: 6%;
+    }
+  }
+}

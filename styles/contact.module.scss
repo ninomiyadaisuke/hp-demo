@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  &__container {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translateY(-50%) translateX(-50%);
+    height: 70vh;
+    max-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__link {
+    height: 20vh;
+    max-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &_position {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+  }
+  @include mq ('md') {
+    h2 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+

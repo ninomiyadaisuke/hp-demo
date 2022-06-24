@@ -1,0 +1,10 @@
+@import './variables.scss';
+
+.grid {
+  display: grid;
+  grid-template-columns:1fr;
+  gap: 10px;
+  @include mq ('md') {
+    grid-template-columns:1fr 1fr;
+  }
+}

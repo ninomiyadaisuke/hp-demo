@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.sliderbutton {
+  position: relative;
+  a {
+    margin: 0 auto 10vh;
+    order: 1;
+  }
+  @include mq("md") {
+    height: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    button {
+      display: flex;
+      margin: auto;
+      z-index: 1;
+    }
+  }
+}

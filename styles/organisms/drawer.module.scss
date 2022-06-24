@@ -1,0 +1,106 @@
+@import "../variables.scss";
+
+.drawer {
+  position: relative;
+  small {
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    overflow: auto;
+    padding: 20px;
+    height: 100% !important;
+    bottom: 0 !important;
+    top: auto !important;
+    height: 100% !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    z-index: 20 !important;
+  }
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+  label {
+    z-index: 18 !important;
+    cursor: pointer;
+  }
+  h2 {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+  }
+  &__container {
+    padding: 20px;
+  }
+  &__icons {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+  }
+  &__links {
+    margin: 50% auto 20% auto;
+    &_position {
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  @include mq("md") {
+    &__logo {
+      position: absolute;
+      bottom: 2%;
+      left: 4%;
+    }
+    &__container {
+      height: 100%;
+    }
+    &__row {
+      height: 98%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__icons {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 6%;
+    }
+    &__cards {
+      order: -1;
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
+      &_width {
+        width: 77vw;
+      }
+    }
+    &__links {
+      margin: 0;
+      display: flex;
+      width: 99%;
+      justify-content: flex-end;
+      &_position {
+        height: auto;
+        display: flex;
+        flex-direction: unset;
+        justify-content: space-between;
+        width: 77vw;
+      }
+    }
+    nav {
+      padding: 0;
+      height: 100vh;
+      height: 92.7vh !important;
+      width: 95% !important;
+    }
+  }
+}
