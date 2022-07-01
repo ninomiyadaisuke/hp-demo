@@ -1,0 +1,57 @@
+@import "../variables.scss";
+
+.imagetext {
+  h3 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 45px 0 ;
+  }
+  @include mq("md") {
+    display: flex;
+    h3 {
+      font-size: 22px;
+    }
+    p {
+      font-size: clamp(14px, 1vw, 18px);
+    }
+    &__image {
+      width: 37vw;
+      img{
+        min-height: 300px;
+      }
+      &_right {
+        @extend .imagetext__image;
+        order: 1;
+      }
+    }
+    &__container {
+      padding-top: 5%;
+      display: flex;
+      justify-content: flex-end;
+      width: 53vw;
+      &_left {
+        @extend .imagetext__container;
+        justify-content: start;
+      }
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 48vw;
+    }
+    &__title {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0;
+    }
+  }
+}

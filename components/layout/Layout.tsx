@@ -3,6 +3,8 @@ import Header from "../molecules/Header";
 import Footer from "../organisms/layout/Footer";
 import DrawerMenu from "../organisms/layout/DrawerMenu";
 
+import styles from "../../styles/layouts.module.scss";
+
 type Props = {
   children: ReactNode;
 };
@@ -13,9 +15,11 @@ const Layout: FC<Props> = (props) => {
   return (
     <>
       <DrawerMenu open={open} setOpen={setOpen} />
-      <Header setOpen={setOpen} open={open} />
-      <main>{children}</main>
-      <Footer />
+      <div className={styles.backgroud}>
+        <Header setOpen={setOpen} open={open} />
+        <main>{children}</main>
+        <Footer />
+      </div>
     </>
   );
 };

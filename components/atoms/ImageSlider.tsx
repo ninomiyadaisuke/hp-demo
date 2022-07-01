@@ -27,7 +27,6 @@ const ImageSlider: FC = () => {
         spaceBetween={mobile ? 10 : 0}
       >
         {images.map((image, i) => {
-          console.log(image);
           return (
             <SwiperSlide key={i} className={styles.slider__image}>
               <Image

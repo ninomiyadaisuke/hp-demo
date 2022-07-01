@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.title {
+  @include mq("md") {
+    &__sub,
+    &__title,
+    &__white {
+      line-height: 1;
+    }
+    &__sub {
+      margin-bottom: 4px;
+    }
+    &__white {
+      color: #fff;
+    }
+    &__title,
+    &__white {
+      font-size: clamp(40px, 1vw, 60px);
+    }
+  }
+}

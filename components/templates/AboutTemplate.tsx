@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import AboutTop from "../organisms/about/AboutTop";
 import Concept from "../organisms/about/Concept";
 import Yspacer from "../atoms/Yspacer";
@@ -8,6 +8,7 @@ import AboutInfo from "../organisms/about/AboutInfo";
 import styles from "../../styles/templates/about_template.module.scss";
 
 const AboutTemplate: FC = () => {
+  const [_, setOpen] = useState(false);
   return (
     <>
       <div className={styles.about__top}>
@@ -20,7 +21,7 @@ const AboutTemplate: FC = () => {
         <AboutInfo />
         <Yspacer pcSize={40} spSize={40} />
         <div className={styles.about__grid}>
-          <GridCard />
+          <GridCard setOpen={setOpen} />
         </div>
       </div>
       <Yspacer pcSize={200} spSize={91} />

@@ -1,0 +1,59 @@
+@import "../variables.scss";
+
+.banner {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  &__text {
+    line-height: 1.2;
+  }
+  &__space {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__image {
+    span {
+      position: static !important;
+    }
+    img {
+      position: static !important;
+      width: 100% !important;
+      height: 30vh !important;
+    }
+  }
+  &__container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(104, 106, 106, 0.6);
+    height: 15vh;
+    padding: 20px;
+  }
+  &__space {
+    gap: 5px;
+  }
+  h3,
+  &__text {
+    font-size: 16px;
+    color: #fff;
+  }
+  &__text {
+    font-size: 14px;
+  }
+  @include mq('md') {
+    &__image {
+      img {
+        height: 21vh !important;
+      }
+    }
+    &__container {
+      height: 10vh;
+    }
+    h3 {
+      font-size: 24px;
+    }
+  }
+}

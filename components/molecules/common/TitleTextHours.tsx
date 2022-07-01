@@ -1,5 +1,6 @@
 import { FC } from "react";
 import BusinessHours from "../../atoms/BusinessHours";
+import Title from "../../atoms/Title";
 import Text from "../../atoms/Text";
 
 import styles from "../../../styles/molecules/title_text_hours.module.scss";
@@ -8,21 +9,39 @@ type Props = {
   title: string;
   subTitle?: string;
   text: string;
-  fontColor: "black" | "white";
+  fontColor?: "black" | "white";
+  nonTitle?: boolean;
+  nonText?: boolean;
+  nonHours?: boolean;
 };
 
 const TitleTextHours: FC<Props> = (props) => {
-  const { title, subTitle, text, fontColor } = props;
+  const {
+    title,
+    subTitle,
+    text,
+    fontColor = "black",
+    nonHours = false,
+    nonText = false,
+    nonTitle = false,
+  } = props;
+  const black = fontColor === "black";
   return (
     <div className={styles.shopInfo}>
-      <div className={styles.shopInfo__titletext}>
-        <div>
-          {subTitle && <p className={styles.shopInfo__subTitle}>{subTitle}</p>}
-          <h2>{title}</h2>
+      {!nonTitle && (
+        <div className={styles.shopInfo__title}>
+          <Title title={title} subTitle={subTitle} />
         </div>
-      </div>
-      <p>{text}</p>
-      <BusinessHours />
+      )}
+      {!nonText && (
+        <Text
+          className={
+            black ? styles.shopInfo__text : styles.shopInfo__text_white
+          }
+          text={text}
+        />
+      )}
+      {!nonHours && <BusinessHours fontColor={fontColor} />}
     </div>
   );
 };

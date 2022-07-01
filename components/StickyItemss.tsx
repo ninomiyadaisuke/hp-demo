@@ -1,7 +1,7 @@
 import { FC } from "react";
 import MenuLink from "./atoms/MenuLink";
 import Text from "./atoms/Text";
-import Title from "./atoms/Title";
+import Title from "./atoms/Titles";
 import Yspacer from "./atoms/Yspacer";
 
 import styles from "../styles/sticky_item.module.scss";

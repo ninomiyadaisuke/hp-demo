@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, Dispatch, SetStateAction } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Text from "./Text";
@@ -8,13 +8,14 @@ import styles from "../../styles/card.module.scss";
 type Props = {
   path: string;
   simplified?: boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
 };
 
 const Card: FC<Props> = (props) => {
-  const { path = "/", simplified = false } = props;
+  const { path = "/", simplified = false, setOpen } = props;
   return (
     <Link href={path}>
-      <a className={styles.cards}>
+      <a onClick={() => setOpen(false)} className={styles.cards}>
         <div
           className={
             !simplified
@@ -22,7 +23,11 @@ const Card: FC<Props> = (props) => {
               : styles.cards__container_simplified
           }
         >
-          <div className={simplified ? styles.cards__icon_test : styles.cards__icon}>
+          <div
+            className={
+              simplified ? styles.cards__icon_test : styles.cards__icon
+            }
+          >
             <Image src={"/icon.png"} alt={"icon"} width={66} height={66} />
           </div>
           <div className={styles.cards__position}>

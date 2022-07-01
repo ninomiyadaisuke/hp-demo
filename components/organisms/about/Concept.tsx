@@ -8,7 +8,7 @@ const Concept: FC = () => {
   return (
     <section className={styles.concept}>
       <ImageText
-        path="/IMG_01.png"
+        path="/concept1.jpg"
         position={"left"}
         title={"コンセプト紹介 1"}
         text={
@@ -17,7 +17,7 @@ const Concept: FC = () => {
       />
       <Yspacer pcSize={150} spSize={50} />
       <ImageText
-        path="/IMG_01.png"
+        path="/concept2.jpg"
         position={"right"}
         title={"コンセプト紹介 1"}
         text={

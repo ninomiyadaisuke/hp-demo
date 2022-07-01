@@ -1,0 +1,29 @@
+@import "../variables.scss";
+
+.button {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 55px;
+  border: solid 1px;
+  &:hover {
+    box-shadow: 5px 5px 8px gray;
+  }
+  p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+  }
+  @include mq("md") {
+    height: 12vh;
+    p {
+      font-size: 18px;
+    }
+  }
+  @include mq('xl') {
+    height: 141px;
+  }
+}

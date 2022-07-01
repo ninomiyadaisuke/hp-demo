@@ -1,8 +1,36 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 .top {
-  height: 100vh;
   &__image {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 42px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+  }
+  @include mq("md") {
+    height: 85vh;
+    display: flex;
+    &__image {
+      display: flex;
+      justify-content: flex-start;
+      width: 50%;
+      margin-bottom: 0;
+    }
+    &__container {
+      width: 50%;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 7vh;
+      width: 36vw;
+      margin: 0 auto;
+      padding-top: 10%;
+    }
   }
 }

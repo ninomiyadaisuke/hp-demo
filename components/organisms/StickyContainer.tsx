@@ -1,6 +1,7 @@
 import { FC } from "react";
 import StickyItems from "../molecules/StickyItem";
 import List from "./List";
+import Banners from "./top/Banners";
 import Yspacer from "../atoms/Yspacer";
 
 import styles from "../../styles/sticky_container.module.scss";
@@ -13,7 +14,7 @@ const StickyContainer: FC = () => {
       </div>
       <Yspacer pcSize={0} spSize={80} />
       <div className={styles.container__list}>
-        <List />
+        <Banners />
       </div>
     </section>
   );

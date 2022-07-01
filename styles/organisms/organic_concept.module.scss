@@ -1,0 +1,48 @@
+@import "../variables.scss";
+
+.concept {
+  &__text,
+  .concept__text_row,
+  .concept__text_top {
+    margin-top: 9vh;
+  }
+  &__container {
+    margin-bottom: 11vh;
+    &_top {
+      margin-bottom: 20vh;
+    }
+    &_bottom {
+      margin-bottom: 0;
+    }
+  }
+  @include mq("md") {
+    &__container {
+      display: flex;
+      margin-bottom: 25vh;
+      &_top {
+        display: flex;
+        margin-bottom: 35vh;
+      }
+      &_bottom {
+        display: flex;
+      }
+    }
+    &__image {
+      width: 50%;
+    }
+    &__text {
+      margin: 0 auto;
+      &_row,
+      &_top {
+        margin: 0 auto;
+      }
+      &_top {
+        padding-top: 30%;
+      }
+      &_row {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+}

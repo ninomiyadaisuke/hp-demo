@@ -1,15 +1,23 @@
-import type { NextPage } from "next";
-import TitleTextHours from "../components/molecules/common/TitleTextHours";
+import type { NextPage, GetStaticProps } from "next";
+import { fetchTopics } from "../lib/topics";
+import Banner from "../components/molecules/top/Banner";
+import Banners from "../components/organisms/top/Banners";
 
-const Sample: NextPage = () => {
+export type Topic = {
+  id: string;
+  title: string;
+  text: string;
+};
+
+type Props = { topics: Topic[] };
+
+const Sample: NextPage<Props> = (props) => {
+  const { topics } = props;
+
   return (
-    <TitleTextHours
-      title="present"
-      subTitle="gallery"
-      text="概要説明欄。セレクトショップであることの説明。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。"
-      fontColor="black"
+    <Banners
+      
     />
   );
 };
-
 export default Sample;

@@ -38,7 +38,7 @@ type Props = {
 };
 
 const DrawerMenu: FC<Props> = (props) => {
-  const { open, setOpen } = props;
+  const { open = false, setOpen } = props;
   const { mobile } = useBreakPoint();
   return (
     <div className={styles.drawer}>
@@ -63,7 +63,7 @@ const DrawerMenu: FC<Props> = (props) => {
           </div>
           <div className={styles.drawer__cards}>
             <div className={styles.drawer__cards_width}>
-              <GridCard />
+              <GridCard setOpen={setOpen} />
             </div>
           </div>
           {!mobile && (

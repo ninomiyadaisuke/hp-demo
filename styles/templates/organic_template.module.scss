@@ -1,0 +1,42 @@
+@import "../variables.scss";
+
+.organic {
+  margin: 50px 20px 0 20px;
+  section[class="organic_top_top__AMUIa"] {
+    margin-bottom: 12vh;
+  }
+  section[class="organic_concept_concept__BfZHS"] {
+    margin-bottom: 12vh;
+  }
+  section[class="organic_images_text_area_area__F6lW5"] {
+    margin-bottom: 12vh;
+  }
+  section[class="access_googlemap_access__BCi01"] {
+    margin-bottom: 19vh;
+  }
+  section[class="important_points_points___LZTA"] {
+    margin-bottom: 7.5vh;
+  }
+  @include mq("md") {
+    margin: 70px 50px 0 50px;
+    section[class="organic_top_top__AMUIa"] {
+      margin-bottom: 23.5vh;
+    }
+
+    section[class="organic_concept_concept__BfZHS"] {
+      margin-bottom: 28vh;
+    }
+    section[class="organic_images_text_area_area__F6lW5"] {
+      margin-bottom: 25vh;
+    }
+    section[class="access_googlemap_access__BCi01"] {
+      margin-bottom: 20vh;
+    }
+    section[class="important_points_points___LZTA"] {
+      margin-bottom: 17vh;
+    }
+  }
+  @include mq("xl") {
+    margin: 70px 70px 0 70px;
+  }
+}

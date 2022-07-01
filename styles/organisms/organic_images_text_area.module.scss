@@ -1,0 +1,22 @@
+@import '../variables.scss';
+
+.area {
+  height: auto;
+  &__small_bottom {
+    margin-bottom: 6vh;
+  }
+  &__large_bottom {
+    margin-bottom: 15vh;
+  }
+  &__last {
+    margin-bottom: 0;
+  }
+  @include mq('md') {
+    &__small_bottom {
+      margin-bottom: 4vh;
+    }
+    &__large_bottom {
+      margin-bottom: 25vh;
+    }
+  }
+}

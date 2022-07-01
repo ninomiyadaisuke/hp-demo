@@ -1,0 +1,140 @@
+@import "../variables.scss";
+
+.imagetext {
+  h3 {
+    font-size: 14px;
+  }
+  &__image_container,
+  .imagetext__image_container_right {
+    width: 100%;
+    &_right {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  &__image {
+    width: 78vw;
+  }
+  &__container,
+  .imagetext__container_right {
+    width: 100%;
+    display: flex;
+    &_right {
+      justify-content: flex-end;
+    }
+  }
+  &__text_width {
+    width: 78vw;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &__title {
+    margin: 6vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @include mq("md") {
+    display: flex;
+    h3 {
+      font-size: 22px;
+    }
+    &__container {
+      width: 53vw;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__text_width {
+      width: 48vw;
+    }
+    &__image_container,
+    .imagetext__image_container_right {
+      display: flex;
+      &_right {
+        justify-content: flex-end;
+        order: 1;
+      }
+    }
+    &__image {
+      width: 37vw;
+      img {
+        min-height: 300px;
+      }
+    }
+    &__text {
+      font-size: clamp(14px, 1vw, 18px);
+    }
+  }
+}
+
+// .imagetext {
+//   h3 {
+//     font-size: 14px;
+//   }
+//   p {
+//     font-size: 14px;
+//   }
+//   &__title {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+//     margin: 45px 0;
+//   }
+//   &__container,.imagetext__container_right {
+//     display: flex;
+//     justify-content: flex-end;
+//     width: 100%;
+//   }
+//   &__text {
+//     width: 78vw;
+//   }
+//   &__position_right {
+//     display: flex;
+//     justify-content: flex-end;
+//   }
+//   &__image {
+//     width: 78vw;
+//   }
+//   @include mq("md") {
+//     display: flex;
+//     h3 {
+//       font-size: 22px;
+//     }
+//     p {
+//       font-size: clamp(14px, 1vw, 18px);
+//     }
+//     &__image,
+//     .imagetext__image_right {
+//       width: 37vw;
+//       img {
+//         min-height: 300px;
+//       }
+//       &_right {
+//         order: 1;
+//       }
+//     }
+//     &__container,.imagetext__container_left {
+//       padding-top: 5%;
+//       display: flex;
+//       justify-content: flex-end;
+//       width: 53vw;
+//       &_left {
+//         justify-content: start;
+//       }
+//     }
+//     &__text {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 30px;
+//       width: 48vw;
+//     }
+//     &__title {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 10px;
+//       margin: 0;
+//     }
+//   }
+// }

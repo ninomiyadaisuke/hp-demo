@@ -1,0 +1,10 @@
+@import "./variables.scss";
+
+.backgroud {
+  max-width: 100vw;
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-image: url("/background.svg");
+  background-repeat: no-repeat;
+}

@@ -31,7 +31,7 @@ const AboutTop: FC = () => {
           />
         </div>
       </div>
-      <Image src={"/background.png"} alt={"backbround image"} layout={"fill"} />
+      <Image src={"/abouttop.jpg"} alt={"backbround image"} layout={"fill"} objectFit={'cover'} />
       <div className={styles.about__scroll}>
         <Image
           src={"/scroll_icon.png"}

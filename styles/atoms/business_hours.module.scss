@@ -5,12 +5,15 @@
     display: flex;
     justify-content: center;
   }
-  &__week {
+  &__week, .business__white {
     width: 70px;
     display: flex;
     justify-content: flex-end;
     font-size: 14px;
     margin-right: 20px;
+  }
+  &__white,.business__text_white {
+    color: #fff;
   }
   p {
     font-size: 14px;

@@ -1,0 +1,16 @@
+@import "../variables.scss";
+
+.banners {
+  width: 100%;
+  &__list {
+    margin-bottom: 15px;
+  }
+  &__last {
+    margin-bottom: 0;
+  }
+  @include mq('md') {
+    &__list {
+      margin-bottom: 28px;
+    }
+  }
+}

@@ -4,11 +4,12 @@ import { returnCodeToBr } from "../../lib/helper";
 
 type Props = {
   text: string;
+  className?: string;
 };
 
 const Text: FC<Props> = (props) => {
-  const { text } = props;
-  return <p>{HTMLReactParser(returnCodeToBr(text))}</p>;
+  const { text, className } = props;
+  return <p className={className}>{HTMLReactParser(returnCodeToBr(text))}</p>;
 };
 
 export default Text;

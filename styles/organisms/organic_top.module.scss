@@ -1,0 +1,46 @@
+@import "../variables.scss";
+
+.top {
+  &__title {
+    display: flex;
+    justify-content: center;
+    padding: 13vh 0 5vh 0;
+  }
+  &__images {
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 2vh;
+  }
+  &__image {
+    img {
+      height: 31vh !important;
+    }
+  }
+  &__scroll {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  @include mq("md") {
+    display: flex;
+    &__images {
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+      width: 50%;
+      height: 85vh;
+      margin-bottom: 0;
+    }
+    &__image {
+      img {
+        width: 860px !important;
+        min-height: 200px;
+        max-height: 27vh;
+      }
+    }
+    &__container {
+      padding-top: 10%;
+      margin: 0 auto;
+    }
+  }
+}
