@@ -1,0 +1,17 @@
+@import '../variables.scss';
+
+.news {
+  max-width: 837px;
+  margin: 50px 25px 0 25px;
+}
+
+@include mq($breakpoint: md) {
+  .news {
+    margin: 100px 100px 0 100px;
+  }
+}
+@include mq($breakpoint: lg) {
+  .news {
+    margin: 100px auto 0 auto;
+  }
+}

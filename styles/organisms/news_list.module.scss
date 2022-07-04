@@ -1,0 +1,49 @@
+@import '../variables.scss';
+
+.news {
+  width: 100%;
+  padding-top: 6.25rem;
+  &__title {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 7rem;
+  }
+
+  &__list {
+    &-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+  }
+
+  &__pagination {
+    &-bar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+  }
+
+  &__select {
+    label {
+      display: inline-block;
+      margin-right: 0.5rem;
+      vertical-align: center;
+    }
+  }
+}
+
+@include mq($breakpoint: md) {
+  .news {
+    padding-top: 10rem;
+
+    &__select {
+      label {
+        vertical-align: middle;
+      }
+    }
+  }
+}
