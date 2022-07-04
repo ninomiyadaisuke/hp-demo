@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import NewsList from '../organisms/news/NewsList';
+import { FC } from "react";
+import NewsList from "../organisms/news/NewsList";
 
-import styles from '../../styles/templates/news_template.module.scss';
+import styles from "../../styles/templates/news_template.module.scss";
 
 const NewsTemplate: FC = () => {
   return (

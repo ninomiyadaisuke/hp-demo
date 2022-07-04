@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
-import { NewsItemsType } from '../../../lib/types';
+import React, { FC } from "react";
+import { NewsItemsType } from "../../../lib/types";
 
-import styles from '../../../styles/molecules/news_item.module.scss';
-import Text from '../../atoms/Text';
+import styles from "../../../styles/molecules/news_item.module.scss";
+import Text from "../../atoms/Text";
 
 const NewsItem: FC<NewsItemsType> = props => {
   const { timestamp, textNews } = props;
@@ -10,7 +10,7 @@ const NewsItem: FC<NewsItemsType> = props => {
   return (
     <li className={styles.news}>
       <div className={styles.box}>
-        <div className={styles['box__top']}>
+        <div className={styles["box__top"]}>
           <Text text={timestamp} />
         </div>
         <Text text={textNews} />
