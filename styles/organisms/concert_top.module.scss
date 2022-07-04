@@ -1,0 +1,43 @@
+@import "../variables.scss";
+
+.top {
+  &__link {
+    display: flex;
+    justify-content: center;
+  }
+  &__container {
+    margin-top: 168px;
+  }
+  &__text_block {
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 75px;
+  }
+  @include mq("md") {
+    height: 85vh;
+    display: flex;
+    &__container {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      height: 53vh;
+      max-height: 630px;
+      margin-top: 10%;
+    }
+    &__text {
+      &_block {
+        margin-bottom: 10vh;
+      }
+    }
+    &__hours {
+      margin-bottom: 20px;
+    }
+    &__image {
+      display: flex;
+      width: 50%;
+    }
+    &__link {
+      justify-content: flex-start;
+    }
+  }
+}

@@ -19,8 +19,8 @@ const Access: FC = () => {
             <Image
               src={
                 breakpoint === "mobile"
-                  ? "/access_map_block2.png"
-                  : "/access_map_block.png"
+                  ? "/map-sp.png"
+                  : "/map.jpg"
               }
               alt={"map"}
               width={breakpoint === "mobile" ? 340 : 1296}

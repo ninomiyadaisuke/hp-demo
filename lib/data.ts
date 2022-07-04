@@ -36,7 +36,7 @@ export const items = [
 export const data = [
   {
     id: '1',
-    map: '/map_image.png',
+    map: '/floormap.png',
     text: 'Nayuta概要説明欄。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。',
     cards: [
       {
@@ -85,7 +85,7 @@ export const data = [
   },
   {
     id: '2',
-    map: '/map_image.png',
+    map: '/floormap.png',
     text: 'Nayuta概要説明欄。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。',
     cards: [
       {
