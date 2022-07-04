@@ -1,12 +1,11 @@
-import React, { FC, Fragment, useMemo, useState } from 'react';
-import Pagination from '../../atoms/Pagination';
-import NewsCard from '../../atoms/NewsCard';
-import NewsItem from '../../molecules/news/NewsItem';
+import React, { FC, Fragment, useMemo, useState } from "react";
+import Pagination from "../../atoms/Pagination";
+import NewsCard from "../../atoms/NewsCard";
+import NewsItem from "../../molecules/news/NewsItem";
 
-import styles from './../../../styles/organisms/news_list.module.scss';
-import Link from 'next/link';
-import { DUMMY_NEWS } from '../../../lib/data';
-import Text from '../../atoms/Text';
+import styles from "./../../../styles/organisms/news_list.module.scss";
+import { DUMMY_NEWS } from "../../../lib/data";
+import Text from "../../atoms/Text";
 
 const NewsList = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -27,11 +26,11 @@ const NewsList = () => {
   let content = <p>現在お知らせがありません</p>;
   if (DUMMY_NEWS.length > 0) {
     content = (
-      <>
+      <ul className={styles["news__list-container"]}>
         {currentNewsDatas.map((item: any) => (
           <NewsItem key={item.id} id={item.id} timestamp={item.timestamp} textNews={item.text} />
         ))}
-      </>
+      </ul>
     );
   }
 
@@ -52,28 +51,20 @@ const NewsList = () => {
             </tspan>
           </text>
         </svg>
-        <div className={styles['news__pagination']}>
-          <div className={styles['news__select']}>
+        <div className={styles["news__pagination"]}>
+          <div className={styles["news__select"]}>
             <label htmlFor="pageSize">
-              <Text text={'お知らせ'} />
+              <Text text={"お知らせ"} />
             </label>
             <select name="pageSize" value={pageSize} id="pageSize" onChange={onPageSize}>
-              <option value="5">
-                <Text text={'5'} />
-              </option>
-              <option value="10">
-                <Text text={'10'} />
-              </option>
-              <option value="15">
-                <Text text={'15'} />
-              </option>
-              <option value="20">
-                <Text text={'20'} />
-              </option>
+              <option value="5">5 </option>
+              <option value="10">10 </option>
+              <option value="15">15 </option>
+              <option value="20">20 </option>
             </select>
           </div>
           <Pagination
-            className={styles['news__pagination-bar']}
+            className={styles["news__pagination-bar"]}
             currentPage={currentPage}
             totalCount={DUMMY_NEWS.length}
             pageSize={pageSize}
@@ -83,12 +74,10 @@ const NewsList = () => {
           />
         </div>
         <div className={styles.news__list}>
-          <NewsCard>
-            <ul className={styles['news__list-container']}>{content}</ul>
-          </NewsCard>
+          <NewsCard>{content}</NewsCard>
         </div>
         <Pagination
-          className={styles['news__pagination-bar']}
+          className={styles["news__pagination-bar"]}
           currentPage={currentPage}
           totalCount={DUMMY_NEWS.length}
           pageSize={pageSize}
