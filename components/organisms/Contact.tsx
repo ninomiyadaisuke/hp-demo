@@ -4,7 +4,7 @@ import Text from "../atoms/Text";
 
 import styles from "../../styles/contact.module.scss";
 
-const Contanct: FC = () => {
+const Contact: FC = () => {
   return (
     <section className={styles.contact}>
       <div className={styles.contact__container}>
@@ -23,4 +23,4 @@ const Contanct: FC = () => {
   );
 };
 
-export default Contanct;
+export default Contact;
