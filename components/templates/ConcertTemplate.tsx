@@ -7,7 +7,6 @@ import ConcertReservation from "../organisms/concert/ConcertReservation";
 import ConcertInfoList from "../molecules/concert/ConcertInfoList";
 import ImportantPoints from "../atoms/ImportantPoints";
 import Contact from "../organisms/Contact";
-import AccessGoogleMap from "../organisms/AccessGoogleMap";
 
 const ConcertTemplate: FC = () => {
   return (
@@ -16,7 +15,6 @@ const ConcertTemplate: FC = () => {
       <ConcertArticlesTop />
       <ConcertReservation />
       <ConcertInfoList />
-      <AccessGoogleMap />
       <ImportantPoints />
       <Contact />
     </article>
