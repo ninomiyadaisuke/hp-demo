@@ -40,43 +40,43 @@ export const data = [
     text: 'Nayuta概要説明欄。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。',
     cards: [
       {
-        id: '1',
+        id: '11',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
       },
       {
-        id: '2',
+        id: '12',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
       },
       {
-        id: '3',
+        id: '13',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
       },
       {
-        id: '4',
+        id: '14',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
       },
       {
-        id: '5',
+        id: '15',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
       },
       {
-        id: '6',
+        id: '16',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
       },
       {
-        id: '7',
+        id: '17',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
@@ -89,31 +89,31 @@ export const data = [
     text: 'Nayuta概要説明欄。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。',
     cards: [
       {
-        id: '8',
+        id: '21',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
       },
       {
-        id: '9',
+        id: '22',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
       },
       {
-        id: '10',
+        id: '23',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
       },
       {
-        id: '10',
+        id: '24',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
       },
       {
-        id: '11',
+        id: '25',
         icon: '/icon.png',
         title: 'Facility name  (List element)',
         discription: 'Nayuta概要説明欄。ここに何か文章を掲載します。<br>ここに何か文章を掲載します。ここに何か文章を掲載します。'
