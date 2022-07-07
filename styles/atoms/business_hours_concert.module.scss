@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.business {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  &__white,
+  .business__text_white {
+    color: #fff;
+  }
+  p {
+    font-size: 14px;
+  }
+  
+  @include mq("md") {
+    p {
+      font-size: 18px;
+    }
+  }
+}

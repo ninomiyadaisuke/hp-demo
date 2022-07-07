@@ -1,0 +1,65 @@
+@import "./../variables.scss";
+
+.concert {
+  width: 100%;
+  margin-right: 27px;
+
+  &__image {
+    margin-bottom: 21px;
+  }
+  &__text {
+    &_title {
+      h2 {
+        margin-bottom: 2rem;
+        font-size: calc(14px + (18 - 14) * ((100vw - 440px) / (1600 - 440)));
+      }
+    }
+    &_description {
+      margin-bottom: 1rem;
+    }
+  }
+  &__reservation_link {
+    text-align: center;
+  }
+
+  &.big_article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+
+    .concert {
+      &__image {
+        margin-bottom: 45px;
+      }
+
+      &__text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        &_description {
+          margin-bottom: 5rem;
+        }
+      }
+    }
+
+    @include mq("lg") {
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      .concert {
+        &__image {
+          width: 50%;
+          margin: 0;
+        }
+        &__text {
+          width: 50%;
+          height: auto;
+          &_description {
+            margin-bottom: 4rem;
+          }
+        }
+      }
+    }
+  }
+}

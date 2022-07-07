@@ -10,12 +10,13 @@ type Props = {
     | "toPastNews"
     | "toContact"
     | "toPolicy"
-    | "drawer";
+    | "drawer"
+    | "toReservation";
   text: string;
   path: string;
 };
 
-const MenuLinks: FC<Props> = (props) => {
+const MenuLinks: FC<Props> = props => {
   const { type, text, path } = props;
 
   const className = (() => {
@@ -32,6 +33,8 @@ const MenuLinks: FC<Props> = (props) => {
         return `${styles.links} ${styles.links__policy}`;
       case "drawer":
         return `${styles.links} ${styles.links__drawer}`;
+      case "toReservation":
+        return `${styles.links} ${styles.links__reservation}`;
       default: {
         const _: never = type;
       }
