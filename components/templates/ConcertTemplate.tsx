@@ -5,9 +5,9 @@ import styles from "../../styles/templates/concert_template.module.scss";
 import ConcertArticlesTop from "../organisms/concert/ConcertArticlesTop";
 import ConcertReservation from "../organisms/concert/ConcertReservation";
 import ConcertInfoList from "../molecules/concert/ConcertInfoList";
-import Access from "../organisms/Access";
 import ImportantPoints from "../atoms/ImportantPoints";
 import Contact from "../organisms/Contact";
+import AccessGoogleMap from "../organisms/AccessGoogleMap";
 
 const ConcertTemplate: FC = () => {
   return (
@@ -16,7 +16,7 @@ const ConcertTemplate: FC = () => {
       <ConcertArticlesTop />
       <ConcertReservation />
       <ConcertInfoList />
-      <Access />
+      <AccessGoogleMap />
       <ImportantPoints />
       <Contact />
     </article>
