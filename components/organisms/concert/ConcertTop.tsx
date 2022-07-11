@@ -20,23 +20,13 @@ const ConcertTop: FC = () => {
             />
           </div>
           <div className={styles.top__image}>
-            <Image
-              src={"/concert-holl.jpg"}
-              alt={""}
-              width={860}
-              height={880}
-              objectFit={"cover"}
-            />
+            <Image src={"/concert-holl.jpg"} alt={""} width={860} height={880} objectFit={"cover"} />
           </div>
           <div className={styles.top__hours}>
             <BusinessHours />
           </div>
           <div className={styles.top__link}>
-            <MenuLinks
-              text="ご予約・予約状況のご確認はこちら"
-              type={"toAbout"}
-              path="/"
-            />
+            <MenuLinks text="ご予約・予約状況のご確認はこちら" type={"toAbout"} path="/" />
           </div>
         </div>
       </div>
