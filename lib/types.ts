@@ -11,3 +11,15 @@ export type Data = {
   text: string;
   cards: Card[];
 };
+
+export type ConcertCardType = {
+  id?: string;
+  srcImg: string;
+  altImg: string;
+  widthImg: number;
+  heightImg: number;
+  titleArticle: string;
+  textArticle: string;
+  bigArticle?: boolean;
+  link?: boolean
+};

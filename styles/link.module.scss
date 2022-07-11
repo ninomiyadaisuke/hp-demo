@@ -9,7 +9,8 @@
   &__about {
     color: aqua;
   }
-  &__contact,&__drawer {
+  &__contact,
+  &__drawer {
     display: block;
     text-align: center;
     font-size: 22px;
@@ -28,7 +29,7 @@
     font-size: 22px;
     padding-bottom: 13.5px;
     &__about {
-      font-size: clamp(10px, 1vw, 22px);
+      font-size: clamp(18px, 1vw, 22px);
       padding-bottom: 13.5px;
     }
     &__news {
@@ -49,6 +50,10 @@
     &__drawer {
       width: 12vw;
       font-size: clamp(14px, 1vw, 18px) !important;
+    }
+    &__reservation {
+      padding-bottom: 13.5px;
+      font-size: calc(14px + (22 - 14) * ((100vw - 440px) / (1600 - 440)));
     }
   }
 }
