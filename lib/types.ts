@@ -1,3 +1,5 @@
+import { DocumentData, Timestamp } from 'firebase/firestore';
+
 export type Card = {
   id: string;
   icon: string;
@@ -12,6 +14,18 @@ export type Data = {
   cards: Card[];
 };
 
+export type FirebaseTimestampType = Timestamp;
+
+export type NewsFetchedType = {
+  id: string;
+  data: DocumentData;
+};
+
+export type NewsItemsType = {
+  id: string;
+  textNews: string;
+  timestamp: string;
+}
 export type ConcertCardType = {
   id?: string;
   srcImg: string;
