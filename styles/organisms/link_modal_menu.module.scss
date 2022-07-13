@@ -3,7 +3,7 @@
 .container {
   &__btn {
     z-index: 9999;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
   }

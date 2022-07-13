@@ -57,6 +57,15 @@ const LinkModalMenu: FC<Props> = props => {
             <Link href="/about">
               <a>About</a>
             </Link>
+            <Link href="/gallery">
+              <a>Gallery</a>
+            </Link>
+            <Link href="/organic">
+              <a>Organic</a>
+            </Link>
+            <Link href="/restaurant">
+              <a>Restaurant</a>
+            </Link>
           </div>
         </div>
         <div className={classes.container__drawer_display}>
