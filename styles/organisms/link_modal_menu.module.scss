@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+.container {
+  &__btn {
+    z-index: 9999;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &__drawer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    &_display_link > a {
+      display: block;
+    }
+  }
+}

@@ -4,7 +4,7 @@ import { data } from "../../lib/data";
 import Layout from "../layout/Layout";
 import StickyContainer from "../organisms/StickyContainer";
 import Access from "../organisms/Access";
-import Contanct from "../organisms/Contanct";
+import Contanct from "../organisms/Contact";
 import Yspacer from "../atoms/Yspacer";
 
 import styles from '../../styles/top_template.module.scss';

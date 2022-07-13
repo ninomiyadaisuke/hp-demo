@@ -25,4 +25,15 @@ export type NewsItemsType = {
   id: string;
   textNews: string;
   timestamp: string;
+}
+export type ConcertCardType = {
+  id?: string;
+  srcImg: string;
+  altImg: string;
+  widthImg: number;
+  heightImg: number;
+  titleArticle: string;
+  textArticle: string;
+  bigArticle?: boolean;
+  link?: boolean
 };
