@@ -34,14 +34,20 @@ $greyA200: #aaaaaa;
 $greyA400: #303030;
 $greyA700: #616161;
 
+$font-size-para: calc(14px + (18 - 14) * ((100vw - 440px) / (1600 - 440)));
+
+@mixin font-size($min, $max) {
+  font-size: calc(#{$min}px + (#{$max} - #{$min}) * ((100vw - 440px) / (1600 - 440)));
+}
+
 $breakpoints: (
-  'xxs': 'screen and (min-width: 440px)',
-  'xs': 'screen and (min-width: 560px)',
-  'sm': 'screen and (min-width: 680px)',
-  'md': 'screen and (min-width: 800px)',
-  'lg': 'screen and (min-width: 1124px)',
-  'xl': 'screen and (min-width: 1600px)',
-  'safari': 'screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)',
+  "xxs": "screen and (min-width: 440px)",
+  "xs": "screen and (min-width: 560px)",
+  "sm": "screen and (min-width: 680px)",
+  "md": "screen and (min-width: 800px)",
+  "lg": "screen and (min-width: 1124px)",
+  "xl": "screen and (min-width: 1600px)",
+  "safari": "screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)",
 ) !default;
 
 // 初期値はlg(tablet screen size)

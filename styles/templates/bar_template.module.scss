@@ -1,0 +1,14 @@
+@import "../variables.scss";
+
+.bars {
+  margin: 50px 30px 0 30px;
+  @include mq("md") {
+    margin: 70px 50px 0 50px;
+  }
+  @include mq("xl") {
+    margin: 70px 70px 0 70px;
+  }
+  section {
+    margin-bottom: 150px;
+  }
+}
