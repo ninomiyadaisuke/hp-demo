@@ -1,10 +1,10 @@
-import { Data, Card, FirebaseTimestampType } from './types';
+import { Data, Card } from "./types";
 
 export const returnCodeToBr = (text: string): string => {
-  if (text === '') {
+  if (text === "") {
     return text;
   } else {
-    return text.replace(/\r?\n/g, '<br/>');
+    return text.replace(/\r?\n/g, "<br/>");
   }
 };
 
@@ -19,11 +19,17 @@ export const deformation = (data: Data[]) => {
   return arry;
 };
 
-export const dateToString = (dt: Date): string => {
-  return dt.getFullYear() + '-' + ('00' + (dt.getMonth() + 1)).slice(-2) + '-' + ('00' + dt.getDate()).slice(-2);
-};
+export const shuffleArray = function (array: any[]) {
+  let currentIndex = array.length;
+  let temporaryValue, randomIndex;
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  console.log("shuffled");
 
-export const timestampToDateString = (timestamp: FirebaseTimestampType): string => {
-  const dt = new Date(timestamp.seconds * 1000);
-  return dateToString(dt);
+  return array;
 };

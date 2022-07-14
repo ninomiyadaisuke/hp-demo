@@ -1,0 +1,88 @@
+@import "./../variables.scss";
+
+.top {
+  display: flex;
+  flex-direction: column;
+  &__bgImg {
+    position: relative;
+    width: calc(100% + 30px);
+    height: 745px;
+    right: 0;
+    background-image: url("./../../public/bar/bar-counter-top.jpg");
+    background-size: cover;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    margin-bottom: 50px;
+  }
+
+  &__presentation {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 20px;
+    margin-left: 26px;
+  }
+
+  &__hours {
+    align-self: flex-end;
+
+    &_desktop {
+      display: none;
+    }
+  }
+}
+
+@include mq("sm") {
+  .top {
+    margin-left: 50px;
+
+    &__bgImg {
+      order: 2;
+      align-self: flex-start;
+      width: calc(100% + 30px);
+      max-height: 364px;
+      margin: 13px 0 22px 0;
+      filter: none;
+    }
+
+    &__presentation {
+      order: 1;
+      position: relative;
+      flex-direction: row;
+    }
+
+    &__hours {
+      order: 3;
+      align-self: auto;
+
+      &_mobile {
+        display: none;
+      }
+
+      &_desktop {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        div span {
+          font-size: $font-size-para;
+          &:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @include mq("md") {
+    .top {
+      &__bgImg {
+        width: calc(100% + 50px);
+      }
+    }
+  }
+}

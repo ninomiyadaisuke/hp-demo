@@ -35,5 +35,18 @@ export type ConcertCardType = {
   titleArticle: string;
   textArticle: string;
   bigArticle?: boolean;
-  link?: boolean
+  link?: boolean;
+};
+
+export type BarMenuItemsType = {
+  id?: string;
+  title: string;
+  price: string;
+  allergy: {
+    src: string;
+    alt: string;
+  }[];
+  description: string;
+  srcImg: string;
+  altImg: string;
 };

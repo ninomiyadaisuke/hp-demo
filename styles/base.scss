@@ -166,7 +166,7 @@ h6 {
 
 p {
   // font-size: 14px;
-  font-size: calc(14px + (18 - 14) * ((100vw - 440px) / (1600 - 440)));
+  font-size: $font-size-para;
   letter-spacing: 0.1em;
   line-height: 1.7;
 }

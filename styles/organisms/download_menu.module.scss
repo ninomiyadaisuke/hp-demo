@@ -1,0 +1,30 @@
+@import "./../variables.scss";
+
+.container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  h2 {
+    font-size: 1rem;
+  }
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 13px;
+  }
+}
+
+@include mq("sm") {
+  .container {
+    &__btns {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 48px;
+      margin: 0;
+    }
+  }
+}
