@@ -1,6 +1,6 @@
 @import "../variables.scss";
 
-.bar__container_type1 {
+.bar__container_type_top {
   background-color: rgba(255, 255, 255, 0.4);
 
   &_titles {
@@ -35,7 +35,7 @@
   }
 }
 
-.bar__container_type2 {
+.bar__container_type_section {
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -1,28 +1,33 @@
 import Image from "next/image";
 import React, { FC } from "react";
-import { GiPeanut, GiFruitBowl } from "react-icons/gi";
-import { TbMilk, TbEgg } from "react-icons/tb";
 import { BarMenuItemsType } from "../../../lib/types";
 
 import styles from "./../../../styles/molecules/bar_menu_card.module.scss";
 
-// const peanut = <GiPeanut className={styles.container__allergy_icon} />;
-
 const BarMenuCard: FC<BarMenuItemsType> = props => {
-  const { title, price, description, srcImg, altImg } = props;
+  const { title, price, description, srcImg, altImg, allergy } = props;
+  const allergies = (
+    <>
+      {allergy?.map((data: any) => (
+        <li key={data.alt}>
+          <Image
+            src={data.src}
+            alt={data.alt}
+            width={25}
+            height={25}
+            objectFit="cover"
+          />
+        </li>
+      ))}
+    </>
+  );
+
   return (
     <div className={styles.container}>
       <h1 className={styles.container__title}>{title}</h1>
       <p className={styles.container__price}>¥ {price} 税込 </p>
       <div className={styles.container__allergy}>
-        <GiPeanut className={styles.container__allergy_icon} />
-        <TbMilk className={styles.container__allergy_icon} />
-        <GiFruitBowl className={styles.container__allergy_icon} />
-        <TbMilk className={styles.container__allergy_icon} />
-        <GiPeanut className={styles.container__allergy_icon} />
-        <GiFruitBowl className={styles.container__allergy_icon} />
-        <TbEgg className={styles.container__allergy_icon} />
-        <TbEgg className={styles.container__allergy_icon} />
+        <ul>{allergies}</ul>
       </div>
       <p className={styles.container__description}>{description}</p>
       <div className={styles.container__img}>

@@ -3,7 +3,7 @@ import { BarMenuItemsType } from "../../../lib/types";
 import BarMenuCard from "./BarMenuCard";
 
 const BarMenuItems: FC<BarMenuItemsType> = props => {
-  const { id, title, price, description, srcImg, altImg } = props;
+  const { id, title, price, description, srcImg, altImg, allergy } = props;
 
   return (
     <li>
@@ -12,6 +12,7 @@ const BarMenuItems: FC<BarMenuItemsType> = props => {
         title={title}
         price={price}
         description={description}
+        allergy={allergy}
         srcImg={srcImg}
         altImg={altImg}
       />

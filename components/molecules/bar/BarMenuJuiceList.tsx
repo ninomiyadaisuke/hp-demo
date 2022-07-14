@@ -17,6 +17,7 @@ const BarMenuJuiceList = () => {
             id={item.id}
             title={item.title}
             price={item.price}
+            allergy={item.allergy}
             description={item.description}
             srcImg={item.srcImg}
             altImg={item.altImg}

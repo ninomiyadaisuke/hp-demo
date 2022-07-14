@@ -408,7 +408,56 @@ export const OnigiriMenuItemsDatas = [
     altImg: "onigiri simple",
     title: "紹介メニュー名称—————掲載———————スペース 1",
     price: "0,000",
-    // allergy: "",
+    allergy: [
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "peanut",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "egg",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "banane",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "peanut",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "egg",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "banane",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "peanut",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "egg",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "banane",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "peanut",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "egg",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "banane",
+      },
+    ],
     description:
       "コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。<br/><br/>コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。",
   },
@@ -418,7 +467,20 @@ export const OnigiriMenuItemsDatas = [
     altImg: "onigiri simple",
     title: "紹介メニュー名称—————掲載———————スペース 2",
     price: "0,000",
-    // allergy: "",
+    allergy: [
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "peanut",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "egg",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "banane",
+      },
+    ],
     description:
       "コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。<br/><br/>コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。",
   },
@@ -428,7 +490,20 @@ export const OnigiriMenuItemsDatas = [
     altImg: "onigiri simple",
     title: "紹介メニュー名称—————掲載———————スペース 3",
     price: "0,000",
-    // allergy: "",
+    allergy: [
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "peanut",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "egg",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "banane",
+      },
+    ],
     description:
       "コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。<br/><br/>コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。",
   },
@@ -436,32 +511,71 @@ export const OnigiriMenuItemsDatas = [
 
 export const JuiceMenuItemsDatas = [
   {
-    id: "1",
+    id: "11",
     srcImg: "/bar/juice/juice-1.jpg",
     altImg: "juice simple",
     title: "紹介メニュー名称—————掲載———————スペース 1",
     price: "0,000",
-    // allergy: "",
+    allergy: [
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "peanut",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "egg",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "banane",
+      },
+    ],
     description:
       "コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。<br/><br/>コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。",
   },
   {
-    id: "2",
+    id: "12",
     srcImg: "/bar/juice/juice-2.jpg",
     altImg: "juice simple",
     title: "紹介メニュー名称—————掲載———————スペース 2",
     price: "0,000",
-    // allergy: "",
+    allergy: [
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "peanut",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "egg",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "banane",
+      },
+    ],
     description:
       "コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。<br/><br/>コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。",
   },
   {
-    id: "3",
+    id: "13",
     srcImg: "/bar/juice/juice-3.jpg",
     altImg: "juice simple",
     title: "紹介メニュー名称—————掲載———————スペース 3",
     price: "0,000",
-    // allergy: "",
+    allergy: [
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "peanut",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "egg",
+      },
+      {
+        src: "/bar/eco-icon.svg",
+        alt: "banane",
+      },
+    ],
     description:
       "コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。<br/><br/>コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。コンセプトやキャッチコピーなどを掲載します。",
   },

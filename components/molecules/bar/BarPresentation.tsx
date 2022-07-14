@@ -9,30 +9,30 @@ type Props = {
   titleOne: string;
   titleTwo: string;
   description: ReactNode;
-  type1?: boolean;
-  type2?: boolean;
+  typeTop?: boolean;
 };
 
 const BarPresentation: FC<Props> = props => {
-  const { img, altImg, titleOne, titleTwo, description, type1, type2 } = props;
+  const { img, altImg, titleOne, titleTwo, description, typeTop } = props;
 
   const classType =
-    type1 && type1 !== undefined ? `bar__container_type1` : `bar__container_type2`;
+    typeTop && typeTop !== undefined ? `bar__container_type_top` : `bar__container_type_section`;
 
   return (
     <div className={[styles[classType], styles.shared_styles].join(" ")}>
       <div className={styles[`${classType}_titles`]}>
         <div className={styles[`${classType}_titles_img`]}>
-          {type1 && (
+          {typeTop && (
             <Image src={img} alt={altImg} width={247} height={104} objectFit="fill" />
           )}
-          {type2 && (
+          {!typeTop && (
             <Image
               className={styles[`${classType}_titles_img_next`]}
               src={img}
               alt={altImg}
               layout="fill"
               objectFit="cover"
+              loading="lazy"
             />
           )}
         </div>

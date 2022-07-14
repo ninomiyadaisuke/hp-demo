@@ -6,12 +6,13 @@ import BarMenuItems from "./BarMenuItems";
 import styles from "./../../../styles/molecules/bar_menu_list.module.scss";
 
 const BarMenuOnigiriList = () => {
+
   let content = <p>no data founds</p>;
 
   if (OnigiriMenuItemsDatas.length > 0) {
     content = (
       <>
-        {OnigiriMenuItemsDatas.map((item: BarMenuItemsType) => (
+        {OnigiriMenuItemsDatas.map((item: any) => (
           <BarMenuItems
             key={item.id}
             id={item.id}
@@ -20,6 +21,7 @@ const BarMenuOnigiriList = () => {
             description={item.description}
             srcImg={item.srcImg}
             altImg={item.altImg}
+            allergy={item.allergy}
           />
         ))}
       </>

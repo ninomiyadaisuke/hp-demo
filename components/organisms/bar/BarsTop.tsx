@@ -30,7 +30,7 @@ const BarsTop = () => {
           titleOne={"玄米おにぎり"}
           titleTwo={"ひとやすみ"}
           description={onigiriDescription}
-          type1={true}
+          typeTop={true}
         />
         <BarPresentation
           img={"/bar/delight-logo.svg"}
@@ -38,7 +38,7 @@ const BarsTop = () => {
           titleOne={"Juice Bar"}
           titleTwo={"Delight"}
           description={juiceDescription}
-          type1={true}
+          typeTop={true}
         />
       </div>
       <div className={styles.top__hours}>

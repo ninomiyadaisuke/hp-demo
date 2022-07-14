@@ -10,5 +10,8 @@
   }
   section {
     margin-bottom: 150px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

@@ -23,7 +23,7 @@ const JuiceBar = () => {
           titleOne={"Juice Bar"}
           titleTwo={"Delight"}
           description={juiceDescription}
-          type2={true}
+          typeTop={false}
         />
         <BarMenuJuiceList />
       </section>

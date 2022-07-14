@@ -16,7 +16,7 @@ const ConcertTemplate: FC = () => {
       <ConcertArticlesTop />
       <ConcertReservation />
       <ConcertInfoList />
-      <AccessGoogleMap showTitle={false} />
+      <AccessGoogleMap showTitle={false} typeColumn={true} />
       <ImportantPoints />
       <Contact />
     </article>

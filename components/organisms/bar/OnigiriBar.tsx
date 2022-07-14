@@ -23,7 +23,7 @@ const OnigiriBar = () => {
           titleOne={"玄米おにぎり"}
           titleTwo={"ひとやすみ"}
           description={onigiriDescription}
-          type2={true}
+          typeTop={false}
         />
         <BarMenuOnigiriList />
       </section>

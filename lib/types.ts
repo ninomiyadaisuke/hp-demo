@@ -28,6 +28,10 @@ export type BarMenuItemsType = {
   id?: string;
   title: string;
   price: string;
+  allergy: {
+    src: string;
+    alt: string;
+  }[];
   description: string;
   srcImg: string;
   altImg: string;

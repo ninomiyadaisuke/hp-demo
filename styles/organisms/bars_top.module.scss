@@ -64,10 +64,9 @@
       &_desktop {
         position: relative;
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        white-space: nowrap;
 
         div span {
           font-size: $font-size-para;

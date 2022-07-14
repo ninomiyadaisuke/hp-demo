@@ -1,0 +1,27 @@
+@import "./../variables.scss";
+
+.container {
+  &__list {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+
+    li {
+      flex: 0 0 auto;
+      cursor: pointer;
+      width: 100%;
+
+      @include mq("xxs") {
+        width: 70%;
+      }
+      @include mq("sm") {
+        width: 5%;
+      }
+      @include mq("md") {
+        width: 30%;
+      }
+    }
+  }
+}
