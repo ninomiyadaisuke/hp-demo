@@ -1,9 +1,7 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from "react";
 
-const NewsCard = (props: {children: ReactNode}) => {
-  return (
-    <div>{props.children}</div>
-  )
-}
+const NewsCard = (props: { children: ReactNode }) => {
+  return <div>{props.children}</div>;
+};
 
-export default NewsCard
+export default NewsCard;

@@ -1,6 +1,10 @@
 {
   "singleQuote": false,
   "arrowParens": "avoid",
+<<<<<<< HEAD
+  "printWidth": 120,
+=======
   "printWidth": 90,
+>>>>>>> main
   "semi": true
 }
