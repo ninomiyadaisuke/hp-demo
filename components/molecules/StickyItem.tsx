@@ -41,7 +41,7 @@ const StickyItems: FC = () => {
             <MenuLink
               type={"toNews"}
               text={"202X. XX. XX  営業日についてのお知らせ"}
-              path={"/sample"}
+              path={"/news"}
             />
           </div>
           <div className={styles.item__link}>
@@ -50,7 +50,7 @@ const StickyItems: FC = () => {
               <MenuLink
                 type={"toPastNews"}
                 text={"お知らせ"}
-                path={"/sample"}
+                path={"/news"}
               />
             </span>
           </div>
