@@ -1,5 +1,4 @@
 import type { NextPage, GetStaticProps } from "next";
-import { fetchTopics } from "../lib/topics";
 import Banner from "../components/molecules/top/Banner";
 import Banners from "../components/organisms/top/Banners";
 
@@ -11,8 +10,8 @@ export type Topic = {
 
 type Props = { topics: Topic[] };
 
-const Sample: NextPage<Props> = (props) => {
-  const { topics } = props;
+const Sample: NextPage<Props> = () => {
+  
 
   return (
     <Banners
