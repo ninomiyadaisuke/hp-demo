@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC,useState } from "react";
 import Card from "../atoms/Card";
 import Image from "next/image";
 import Yspacer from "../atoms/Yspacer";
@@ -19,6 +19,8 @@ type Props = {
 
 const ListCard: FC<Props> = (props) => {
   const { map, text, cards } = props;
+  //後で修正する。
+  const [open,setOpen] = useState(false)
   return (
     <div className={styles.contents}>
       <div className={styles.contents__map}>
@@ -42,7 +44,7 @@ const ListCard: FC<Props> = (props) => {
             cards.map((card) => {
               return (
                 <div key={card.id}>
-                  <Card path={"/restaurant"} />
+                  <Card setOpen={setOpen} path={"/restaurant"} />
                   <Yspacer pcSize={16} spSize={10} />
                 </div>
               );
