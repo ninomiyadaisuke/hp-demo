@@ -49,7 +49,7 @@ const OrganicTop: FC = () => {
       <div className={styles.top__container}>
         <TitleTextHours
           nonTitle={mobile ? true : false}
-          fontColor="black"
+          fontColor='white'
           title="acoustic"
           subTitle="marche"
           text="概要説明欄。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。ここに何か文章を掲載します。"

@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC,useState,useEffect } from "react";
 import BusinessHours from "../../atoms/BusinessHours";
 import Title from "../../atoms/Title";
 import Text from "../../atoms/Text";
