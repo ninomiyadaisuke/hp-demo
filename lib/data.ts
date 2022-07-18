@@ -263,7 +263,7 @@ export const bannersData = [
 export const DUMMY_CONCERT = [
   {
     id: "1",
-    srcImg: "/live_house_1.jpg",
+    srcImg: "/concert/live_house_1.jpg",
     altImg: "image of a live",
     titleArticle:
       "1-コンサートホールの使い方についてサブタイトルを掲載します。サブタイトルを掲載します。",
@@ -272,7 +272,7 @@ export const DUMMY_CONCERT = [
   },
   {
     id: "2",
-    srcImg: "/live_house_2.jpg",
+    srcImg: "/concert/live_house_2.jpg",
     altImg: "image of a singer",
     titleArticle:
       "2-コンサートホールの使い方についてサブタイトルを掲載します。サブタイトルを掲載します。",
@@ -281,7 +281,7 @@ export const DUMMY_CONCERT = [
   },
   {
     id: "3",
-    srcImg: "/live_house_3.jpg",
+    srcImg: "/concert/live_house_3.jpg",
     altImg: "image of guitars",
     titleArticle:
       "3-コンサートホールの使い方についてサブタイトルを掲載します。サブタイトルを掲載します。",
@@ -293,7 +293,7 @@ export const DUMMY_CONCERT = [
 export const DUMMY_CONCERT_INFOS = [
   {
     id: "1",
-    srcImg: "/live_house_1.jpg",
+    srcImg: "/concert/live_house_1.jpg",
     altImg: "image of a live",
     titleArticle:
       "1-機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",
@@ -302,7 +302,7 @@ export const DUMMY_CONCERT_INFOS = [
   },
   {
     id: "2",
-    srcImg: "/live_house_2.jpg",
+    srcImg: "/concert/live_house_2.jpg",
     altImg: "image of a singer",
     titleArticle:
       "2-機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",
@@ -311,7 +311,7 @@ export const DUMMY_CONCERT_INFOS = [
   },
   {
     id: "3",
-    srcImg: "/live_house_3.jpg",
+    srcImg: "/concert/live_house_3.jpg",
     altImg: "image of guitars",
     titleArticle:
       "3-機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",
@@ -320,7 +320,7 @@ export const DUMMY_CONCERT_INFOS = [
   },
   {
     id: "4",
-    srcImg: "/live_house_1.jpg",
+    srcImg: "/concert/live_house_1.jpg",
     altImg: "image of a live",
     titleArticle:
       "4-機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",
@@ -329,7 +329,7 @@ export const DUMMY_CONCERT_INFOS = [
   },
   {
     id: "5",
-    srcImg: "/live_house_2.jpg",
+    srcImg: "/concert/live_house_2.jpg",
     altImg: "image of a singer",
     titleArticle:
       "5-機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",
@@ -338,7 +338,7 @@ export const DUMMY_CONCERT_INFOS = [
   },
   {
     id: "6",
-    srcImg: "/live_house_3.jpg",
+    srcImg: "/concert/live_house_3.jpg",
     altImg: "image of guitars",
     titleArticle:
       "6-機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",
@@ -347,7 +347,7 @@ export const DUMMY_CONCERT_INFOS = [
   },
   {
     id: "7",
-    srcImg: "/live_house_1.jpg",
+    srcImg: "/concert/live_house_1.jpg",
     altImg: "image of a live",
     titleArticle:
       "7-機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",
@@ -356,7 +356,7 @@ export const DUMMY_CONCERT_INFOS = [
   },
   {
     id: "8",
-    srcImg: "/live_house_2.jpg",
+    srcImg: "/concert/live_house_2.jpg",
     altImg: "image of a singer",
     titleArticle:
       "8-機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",
@@ -365,7 +365,7 @@ export const DUMMY_CONCERT_INFOS = [
   },
   {
     id: "9",
-    srcImg: "/live_house_2.jpg",
+    srcImg: "/concert/live_house_2.jpg",
     altImg: "image of a singer",
     titleArticle:
       "機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",
@@ -374,7 +374,7 @@ export const DUMMY_CONCERT_INFOS = [
   },
   {
     id: "10",
-    srcImg: "/live_house_3.jpg",
+    srcImg: "/concert/live_house_3.jpg",
     altImg: "image of guitars",
     titleArticle:
       "機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",
@@ -383,7 +383,7 @@ export const DUMMY_CONCERT_INFOS = [
   },
   {
     id: "11",
-    srcImg: "/live_house_1.jpg",
+    srcImg: "/concert/live_house_1.jpg",
     altImg: "image of a live",
     titleArticle:
       "機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",
@@ -392,7 +392,7 @@ export const DUMMY_CONCERT_INFOS = [
   },
   {
     id: "12",
-    srcImg: "/live_house_2.jpg",
+    srcImg: "/concert/live_house_2.jpg",
     altImg: "image of a singer",
     titleArticle:
       "機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。機材名称・型番などの情報を掲載します。",

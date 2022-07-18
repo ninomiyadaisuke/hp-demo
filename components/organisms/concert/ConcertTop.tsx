@@ -23,7 +23,7 @@ const ConcertTop: FC = () => {
       </div>
       <div className={styles.top__image}>
         <Image
-          src={"/live_house_top.jpg"}
+          src={"/concert/live_house_top.jpg"}
           alt={""}
           width={1124}
           height={820}
