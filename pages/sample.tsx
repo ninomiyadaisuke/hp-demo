@@ -1,22 +1,15 @@
-import type { NextPage, GetStaticProps } from "next";
-import Banner from "../components/molecules/top/Banner";
-import Banners from "../components/organisms/top/Banners";
+import type { NextPage } from "next";
+import FaqItem from "../components/atoms/FaqItem";
+import FaqList from "../components/organisms/faq/FaqList";
+import { faqData } from "../lib/data";
 
-export type Topic = {
-  id: string;
-  title: string;
-  text: string;
-};
+import styles from "../styles/organisms/faq_list.module.scss";
 
-type Props = { topics: Topic[] };
-
-const Sample: NextPage<Props> = () => {
-  
-
+const Sample: NextPage = () => {
   return (
-    <Banners
-      
-    />
+    <section>
+      <FaqList faqData={faqData} />
+    </section>
   );
 };
 export default Sample;
