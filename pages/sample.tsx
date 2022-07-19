@@ -1,22 +1,11 @@
-import type { NextPage, GetStaticProps } from "next";
-import Banner from "../components/molecules/top/Banner";
-import Banners from "../components/organisms/top/Banners";
+import type { NextPage } from "next";
 
-export type Topic = {
-  id: string;
-  title: string;
-  text: string;
-};
 
-type Props = { topics: Topic[] };
-
-const Sample: NextPage<Props> = () => {
-  
-
+const Sample: NextPage = () => {
   return (
-    <Banners
-      
-    />
+    <section>
+      Sample
+    </section>
   );
 };
 export default Sample;

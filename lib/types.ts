@@ -50,3 +50,9 @@ export type BarMenuItemsType = {
   srcImg: string;
   altImg: string;
 };
+
+export type FaqType = {
+  id: string
+  title: string
+  text: string
+}

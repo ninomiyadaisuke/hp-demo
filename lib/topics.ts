@@ -1,6 +1,6 @@
 import { topicRef } from '../firebase/config'
-import { Topic } from '../pages/sample'
 
+type Topic = any
 
 export const fetchTopics = async () => {
   return await topicRef.then((snapshot) => {
