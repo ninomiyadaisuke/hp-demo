@@ -11,23 +11,21 @@ type Props = {
   setOpen: Dispatch<SetStateAction<boolean>>;
 };
 
-const Card: FC<Props> = (props) => {
+const Card: FC<Props> = props => {
   const { path = "/", simplified = false, setOpen } = props;
   return (
     <Link href={path}>
-      <a onClick={() => setOpen(false)} className={styles.cards}>
+      <a
+        style={{ display: "block" }}
+        onClick={() => setOpen(false)}
+        className={styles.cards}
+      >
         <div
           className={
-            !simplified
-              ? styles.cards__container
-              : styles.cards__container_simplified
+            !simplified ? styles.cards__container : styles.cards__container_simplified
           }
         >
-          <div
-            className={
-              simplified ? styles.cards__icon_test : styles.cards__icon
-            }
-          >
+          <div className={simplified ? styles.cards__icon_test : styles.cards__icon}>
             <Image src={"/icon.png"} alt={"icon"} width={66} height={66} />
           </div>
           <div className={styles.cards__position}>
