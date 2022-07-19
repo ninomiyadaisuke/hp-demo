@@ -663,3 +663,31 @@ export const DUMMY_NEWS = [
     text: 'お知らせの文章をここに掲載します。お知らせの文章をここに掲載します。お知らせの文章をここに掲載します。お知らせの文章をここに掲載します。お知らせの文章をここに掲載します。お知らせの文章をここに掲載します。お知らせの文章をここに掲載します。',
   },
 ];
+
+export const faqData = [
+  {
+    id: '1',
+    title: '質問タイトル質問事項 サブタイトル フォントサイズ24px  font-size: 24px;  質問タイトル質問事項 サブタイトル フォントサイズ24px  font-size: 24px;',
+    text: '回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. '
+  },
+  {
+    id: '2',
+    title: '質問タイトル質問事項 サブタイトル フォントサイズ24px  font-size: 24px;  質問タイトル質問事項 サブタイトル フォントサイズ24px  font-size: 24px;',
+    text: '回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. '
+  },
+  {
+    id: '3',
+    title: '質問タイトル質問事項 サブタイトル フォントサイズ24px  font-size: 24px;  質問タイトル質問事項 サブタイトル フォントサイズ24px  font-size: 24px;',
+    text: '回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. '
+  },
+  {
+    id: '4',
+    title: '質問タイトル質問事項 サブタイトル フォントサイズ24px  font-size: 24px;  質問タイトル質問事項 サブタイトル フォントサイズ24px  font-size: 24px;',
+    text: '回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. '
+  },
+  {
+    id: '5',
+    title: '質問タイトル質問事項 サブタイトル フォントサイズ24px  font-size: 24px;  質問タイトル質問事項 サブタイトル フォントサイズ24px  font-size: 24px;',
+    text: '回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. 回答内容 回答事項 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text 標準文章用テキストサイズ18px font-size: 18px; for text. '
+  }
+]
