@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Layout from "../components/layout/Layout";
 import BarsTemplate from "../components/templates/BarTemplate";
 
-const Concert: NextPage = () => {
+const Bar: NextPage = () => {
   return (
     <Layout>
       <BarsTemplate />
@@ -10,4 +10,4 @@ const Concert: NextPage = () => {
   );
 };
 
-export default Concert;
+export default Bar;
