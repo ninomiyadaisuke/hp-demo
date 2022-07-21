@@ -33,7 +33,7 @@ const ConcertTop: FC = () => {
       </div>
       <div className={styles.top__info}>
         <div className={styles.top__info_hours}>
-          <BusinessHoursConcert />
+          <BusinessHoursConcert dayOffHide={false} />
         </div>
         <div className={styles.top__info_link}>
           <MenuLinks

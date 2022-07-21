@@ -75,13 +75,16 @@ const LinkModalMenu: FC<Props> = props => {
           <p>Thomas：</p>
           <div className={classes.container__drawer_display_link}>
             <Link href="/bar">
-              <a>Bar Juice and Onigiri</a>
+              <a>Bars Juice and Onigiri</a>
             </Link>
             <Link href="/news">
               <a>お知らせ</a>
             </Link>
             <Link href="/concert">
-              <a>Concert</a>
+              <a>pure soul</a>
+            </Link>
+            <Link href="/caffe">
+              <a>caffe letter</a>
             </Link>
           </div>
         </div>

@@ -65,10 +65,11 @@
     flex-direction: row;
     gap: 2rem;
     &_mapouter {
-      flex-grow: 1;
+      width: 50%;
       height: 100%;
     }
     &_text {
+      width: 50%;
       align-self: center;
     }
   }

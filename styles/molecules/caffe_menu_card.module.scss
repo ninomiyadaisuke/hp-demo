@@ -1,0 +1,63 @@
+@import "./../variables.scss";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  &__title {
+    grid-area: 1 / 1 / 4 / 3;
+    @include font-size(14, 18);
+  }
+  &__price {
+    grid-area: 4 / 1 / 5 / 5;
+  }
+  &__allergy {
+    grid-area: 5 / 1 / 6 / 5;
+
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      li:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+  &__description {
+    grid-area: 6 / 1 / 11 / 5;
+  }
+  &__img {
+    grid-area: 1 / 3 / 4 / 5;
+    position: relative;
+    height: 100%;
+    width: calc(100% + 30px);
+  }
+}
+
+@include mq("sm") {
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__img {
+      order: 1;
+      position: relative;
+      width: 100%;
+      height: 350px;
+    }
+
+    &__title {
+      order: 2;
+    }
+    &__price {
+      order: 3;
+    }
+    &__allergy {
+      order: 4;
+    }
+    &__description {
+      order: 5;
+    }
+  }
+}

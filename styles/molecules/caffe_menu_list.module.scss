@@ -1,0 +1,22 @@
+@import "./../variables.scss";
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@include mq("md") {
+  .list {
+    margin: 0 12px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 3%;
+    > li {
+      margin-top: 50px;
+      height: auto;
+      flex: 1 0 30%;
+    }
+  }
+}

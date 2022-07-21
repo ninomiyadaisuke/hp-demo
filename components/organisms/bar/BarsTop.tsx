@@ -43,7 +43,7 @@ const BarsTop = () => {
       </div>
       <div className={styles.top__hours}>
         <div className={styles.top__hours_mobile}>
-          <BusinessHoursConcert dayOff={true} />
+          <BusinessHoursConcert dayOffHide={false} />
         </div>
         <div className={styles.top__hours_desktop}>
           <p>営業時間の記載</p>

@@ -1,0 +1,52 @@
+@import "./../variables.scss";
+
+.concept {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    position: relative;
+    width: calc(100% + 30px);
+    height: 100%;
+  }
+
+  &__text {
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_title {
+      font-size: calc(18px + (50 - 18) * ((100vw - 440px) / (1600 - 440)));
+      flex-grow: 1;
+    }
+
+    &_description {
+      flex-grow: 2;
+    }
+
+    &_appeal {
+      flex-grow: 2;
+    }
+  }
+}
+
+@include mq("md") {
+  .concept {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 0 12px;
+
+    &__image {
+      width: 50%;
+    }
+
+    &__text {
+      width: 50%;
+    }
+  }
+}

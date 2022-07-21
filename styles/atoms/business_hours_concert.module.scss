@@ -5,10 +5,17 @@
   flex-direction: row;
   gap: 1rem;
 
-  &__white,
-  .business__text_white {
-    color: #fff;
+  &__week {
+    &_flex {
+      text-align: right;
+    }
   }
+  &__hour {
+    &_flex {
+      text-align: left;
+    }
+  }
+
   p {
     font-size: $font-size-para;
   }
