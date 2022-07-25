@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import styles from "./../../styles/atoms/file_download_btn.module.scss";
 
 type Props = {
-  showTitle: boolean;
+  showTitle?: boolean;
   text: string;
 };
 
