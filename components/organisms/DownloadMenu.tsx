@@ -13,8 +13,8 @@ const DownloadMenu = () => {
         PDFの説明を掲載します。PDFの説明を掲載しますPDFの説明を掲載します。
       </p>
       <div className={styles.container__btns}>
-        <FileDownloadBtn text="Onigiri" />
-        <FileDownloadBtn text="Juice" />
+        <FileDownloadBtn text="Onigiri" showTitle={true} />
+        <FileDownloadBtn text="Juice" showTitle={true} />
       </div>
     </section>
   );
